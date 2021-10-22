@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div style="text-align:left;color:#282828;">
+        <h3>Результаты поиска по запросу <i>{{ query }}</i></h3>
+        {% for snt in search %}
+            <ul>
+                <li> {{ snt }} </li>
+            </ul>
+        {% endfor %}
+    </div>
+{% endblock %}
